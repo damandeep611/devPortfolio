@@ -3,8 +3,8 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { createClient } from "contentful";
 
 const client = createClient({
-  space: process.env.SPACE_ID,
-  accessToken: process.env.ACCESS_TOKEN,
+  space: process.env.SPACE_ID as string,
+  accessToken: process.env.ACCESS_TOKEN as string,
 });
 
 type BlogPageProps = {
